@@ -1,0 +1,17 @@
+{
+  "api_key": "a47811d3-0008-4ecd-9f3e-9c22bdb7c82d",
+  "pools": [
+    {
+      "name": "TCKR",
+      "pool_id": "a7398d649be2f6d897ed24a613cf547bb20cd282a04edfc53d477114",
+      "host": "123.123.123.12",
+      "port": 3001
+    },
+    {
+      "name": "TCKR1",
+      "pool_id": "b73d891285526062d41cd7293746048c6a9a13ab8b591920cf40c706",
+      "host": "123.123.123.35",
+      "port": 3001
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=cncli sendtip
+After=syslog.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=westbam
+LimitNOFILE=131072
+WorkingDirectory=/home/westbam/Development/cncli
+ExecStart=/home/westbam/.cargo/bin/cncli sendtip --cardano-node /home/westbam/.local/bin/cardano-node --config /home/westbam/Development/cncli/pooltool.json
+SuccessExitStatus=143
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cncli-sendtip
+
+[Install]
+WantedBy=multi-user.target

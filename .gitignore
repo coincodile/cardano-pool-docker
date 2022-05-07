@@ -2,3 +2,9 @@ config/
 /rsync.sh
 *.pyc
 __pycache__
+/docs/build/
+/.project
+/.pydevproject
+/.tmp/
+/watch-list
+/build/
