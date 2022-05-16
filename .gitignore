@@ -8,3 +8,4 @@ __pycache__
 /.tmp/
 /watch-list
 /build/
+/cncli-db/

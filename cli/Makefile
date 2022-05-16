@@ -16,7 +16,7 @@ help:
 
 all: $(VERSIONS)
 clean:
-node: all
+cli: all
 force:
 
 $(SUBDIRS):force
@@ -27,8 +27,8 @@ $(VERSIONS): force
 	@$(DOCKER_BUILD) Dockerfile \
 		--build-arg VERSION=$@ \
 		--build-arg LIBSODIUM_VERSION=${LIBSODIUM_VERSION} \
-		--tag coincodile/cardano-node:$@ \
-		--tag coincodile/cardano-node:latest .
+		--tag coincodile/cardano-cli:$@ \
+		--tag coincodile/cardano-cli:latest .
 
 
 

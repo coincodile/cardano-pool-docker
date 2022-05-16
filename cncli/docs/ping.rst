@@ -8,4 +8,6 @@ its response time.
 
   $ docker run --interactive \
      coincodile/cardano-cncli:latest \
-     ping --host relays-new.cardano-testnet.iohkdev.io
+     ping \
+         --host relays.stakepool.at \
+         --port 3001

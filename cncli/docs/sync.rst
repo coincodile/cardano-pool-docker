@@ -7,10 +7,10 @@ database. The validate and leaderlog commands require a synchronized database.
 .. code-block:: bash
 
   $ docker run --interactive \
+     --volume $PWD/cncli-db:/cncli-db \
      coincodile/cardano-cncli:latest \
      sync \
-         --host north-america.relays-new.cardano-mainnet.iohk.io \
-         --port 3000 \
-         --db ./cncli-db \
-         --network-magic 1097911063
-
+         --no-service  \
+         --host relays.stakepool.at \
+         --port 3001 \
+         --db /cncli-db/root.db 
