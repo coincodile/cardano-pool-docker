@@ -16,7 +16,9 @@ BECH_VERSION        ?=1.1.2
 CNCLI_VERSION       ?=4.0.4
 POOL_VERSION        ?=1.34.1-2
 
-SUBDIRS              = address bech32 cncli node cli pool voting
+SUBDIRS              = node cli
+# TODO add following:
+# address bech32 cncli pool voting
 DOCS_TARGETS         = html
 help:
 	@$(DOCKER) --help
